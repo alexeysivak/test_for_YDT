@@ -91,7 +91,7 @@
 	font-size: 2rem;
 	font-weight: 600;
 	color: var(--important-elements-color);
-	margin: 5.6rem 0 15rem;
+	margin: 5.6rem 0 7rem;
 }
 
 .works__link:hover,
@@ -157,6 +157,10 @@
 
 	.works__heading {
 		max-width: 30rem;
+	}
+
+	.works__link {
+		margin: 5.6rem 0 15rem;
 	}
 }
 
