@@ -44,11 +44,21 @@
 	margin-right: 5%;
 }
 
+.main-screen__link-button:hover,
+.main-screen__link-button:focus {
+	box-shadow: 0 0 3px var(--important-elements-color);
+}
+
 .main-screen__link {
 	width: 40%;
 	font-size: 1.6rem;
 	font-weight: 600;
 	color: var(--text-primary-color);
+}
+
+.main-screen__link:hover,
+.main-screen__link:focus {
+	text-decoration: underline;
 }
 
 .main-screen__slider {
@@ -82,6 +92,11 @@
 	font-weight: 600;
 	color: var(--important-elements-color);
 	margin: 5.6rem 0 15rem;
+}
+
+.works__link:hover,
+.works__link:focus {
+	text-decoration: underline;
 }
 
 /*works end*/

@@ -23,9 +23,9 @@ function initSlider() {
 }
 
 function getSliderTemplate() {
-	return `<img src="./images/slider_illustrations/il.png" alt="image" />
-			<img src="./images/slider_illustrations/il.png" alt="image" />
-			<img src="./images/slider_illustrations/il.png" alt="image" />`;
+	return `<img src="./images/slider_illustrations/illustration.svg" alt="image" />
+			<img src="./images/slider_illustrations/illustration.svg" alt="image" />
+			<img src="./images/slider_illustrations/illustration.svg" alt="image" />`;
 }
 
 export { changeLanguage, initSlider };
