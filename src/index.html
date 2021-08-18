@@ -12,44 +12,95 @@
 	<body>
 		<header class="header">
 			<div class="header__logo-block"><img src="./images/logo.svg" alt="Doob logo" /></div>
-			<div class="header__buttons-block">
-				<ul class="header__language-selector hidden" id="languageSelecor">
-					<li class="header__language-displayer">
-						<button id="languageSelectorBtn">
-							EN<span><!--arrow--></span>
+			<div class="header__interaction-container">
+				<div class="header__buttons-block">
+					<ul class="header__language-selector hidden" id="languageSelecor">
+						<li class="header__language-displayer">
+							<button id="languageSelectorBtn">
+								EN<span><!--arrow--></span>
+							</button>
+						</li>
+						<li class="header__language-option">
+							<button type="button" class="header__selector-button" data-lang="en">EN</button>
+						</li>
+						<li class="header__language-option">
+							<button type="button" class="header__selector-button" data-lang="ru">RU</button>
+						</li>
+						<li class="header__language-option">
+							<button type="button" class="header__selector-button" data-lang="uk">UK</button>
+						</li>
+					</ul>
+					<div class="header__contact-block">
+						<button class="header__contact-button">
+							Contact us <img src="./images/Arrow.svg" alt="arrow" />
 						</button>
-					</li>
-					<li class="header__language-option">
-						<button type="button" class="header__selector-button" data-lang="en">EN</button>
-					</li>
-					<li class="header__language-option">
-						<button type="button" class="header__selector-button" data-lang="ru">RU</button>
-					</li>
-					<li class="header__language-option">
-						<button type="button" class="header__selector-button" data-lang="uk">UK</button>
-					</li>
-				</ul>
-				<div class="header__contact-block">
-					<button class="header__contact-button">
-						Contact us <img src="./images/Arrow.svg" alt="arrow" />
-					</button>
+					</div>
+				</div>
+				<div class="header__navigation-block">
+					<button class="header__burger" id="openBurgerBtn"></button>
+					<nav class="header__nav hidden" id="mobileNavMenu">
+						<button class="close-burger-button" id="closeBurgerBtn">&#10006;</button>
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a href="#">Home.</a></li>
+							<li class="header__nav-item"><a href="#">About us.</a></li>
+							<li class="header__nav-item"><a href="#">Portfolio.</a></li>
+							<li class="header__nav-item"><a href="#">Blog.</a></li>
+							<li class="header__nav-item"><a href="#">Contact us.</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<div class="header__navigation-block">
-				<button class="header__burger" id="openBurgerBtn"></button>
-				<nav class="header__nav hidden" id="mobileNavMenu">
-					<button class="close-burger-button" id="closeBurgerBtn">&#10006;</button>
-					<ul class="header__nav-list">
-						<li class="header__nav-item"><a href="#">Home.</a></li>
-						<li class="header__nav-item"><a href="#">About us.</a></li>
-						<li class="header__nav-item"><a href="#">Portfolio.</a></li>
-						<li class="header__nav-item"><a href="#">Blog.</a></li>
-						<li class="header__nav-item"><a href="#">Contact us.</a></li>
-					</ul>
-				</nav>
-			</div>
 		</header>
-		<main class="main"></main>
+		<main class="main">
+			<section class="main-screen">
+				<div class="main-screen__content">
+					<h1 class="main-screen__heading">The Spirit of Digital Agency.</h1>
+					<p class="main-screen__text">
+						Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan
+						tincidunt.
+					</p>
+					<div class="main-screen__links">
+						<a href="#" class="main-screen__link-button">More about us</a>
+						<a href="#" class="main-screen__link">Get In Touch.</a>
+					</div>
+				</div>
+				<div class="main-screen__slider" id="slider"></div>
+			</section>
+			<section class="works">
+				<div class="works__container">
+					<h2 class="works__heading">See some of our Creative work.</h2>
+					<div class="works__block">
+						<div class="works__work"></div>
+						<div class="works__work"></div>
+						<div class="works__work"></div>
+						<div class="works__work"></div>
+						<div class="works__work"></div>
+						<div class="works__work"></div>
+					</div>
+					<a href="#" class="works__link">See More of These.</a>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h4 class="contacts__heading">Contact us</h4>
+					<form class="contacts__form" id="contactForm">
+						<fieldset class="contacts__fieldset">
+							<legend>Get in Touch</legend>
+							<input class="contacts__input" type="email" name="email" placeholder="Your email" />
+							<input class="contacts__input" type="text" name="subject" placeholder="Subject" />
+							<textarea
+								class="contacts__textarea"
+								name="message"
+								placeholder="Message here..."
+								rows="4"
+								cols="50"
+							></textarea>
+							<button class="contacts__button" type="submit">Send Message</button>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+		</main>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
