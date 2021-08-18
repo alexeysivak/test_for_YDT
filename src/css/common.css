@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+/*common*/
+:root {
+	--important-elements-color: #ff3946;
+	--text-primary-color: #314584;
+	--text-dark-color: #6e757a;
+	--text-light-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.html {
+	font-size: 10px;
+}
+
+.body {
+	font-size: 1.4rem;
+}
+
+.hidden {
+	display: none;
+}
+
+/*common end*/

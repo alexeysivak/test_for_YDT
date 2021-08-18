@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo-block"><img src="./images/logo.svg" alt="Doob logo" /></div>
+			<div class="header__buttons-block">
+				<ul class="header__language-selector hidden" id="languageSelecor">
+					<li class="header__language-displayer">
+						<button id="languageSelectorBtn">
+							EN<span><!--arrow--></span>
+						</button>
+					</li>
+					<li class="header__language-option">
+						<button type="button" class="header__selector-button" data-lang="en">EN</button>
+					</li>
+					<li class="header__language-option">
+						<button type="button" class="header__selector-button" data-lang="ru">RU</button>
+					</li>
+					<li class="header__language-option">
+						<button type="button" class="header__selector-button" data-lang="uk">UK</button>
+					</li>
+				</ul>
+				<div class="header__contact-block">
+					<button class="header__contact-button">
+						Contact us <img src="./images/Arrow.svg" alt="arrow" />
+					</button>
+				</div>
+			</div>
+			<div class="header__navigation-block">
+				<button class="header__burger" id="openBurgerBtn"></button>
+				<nav class="header__nav hidden" id="mobileNavMenu">
+					<button class="close-burger-button" id="closeBurgerBtn">&#10006;</button>
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#">Home.</a></li>
+						<li class="header__nav-item"><a href="#">About us.</a></li>
+						<li class="header__nav-item"><a href="#">Portfolio.</a></li>
+						<li class="header__nav-item"><a href="#">Blog.</a></li>
+						<li class="header__nav-item"><a href="#">Contact us.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main"></main>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="./js/main.js" type="module"></script>
+	</body>
+</html>
